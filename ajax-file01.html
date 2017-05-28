@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="report-error"></div>
+	<div class="content">
+		<section>
+			<header class="header"></header>
+
+			<article class="article"></article>
+		</section>
+	</div>
+
+	<script>
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			console.log(xhr.status);
+
+			if(xhr.status === 200){
+				var header = document.getElementsByClassName('header')[0];
+				header.innerHTML = xhr.responseText;
+
+			}else{
+				var error = document.getElementsByClassName('report-error')[0]
+				error.style = 'color: red'
+				error.innerHTML = 'A solicitação não foi concluída'
+			}
+		}
+		xhr.open('GET','buscar/titulo.html');
+		xhr.send()
+	</script>
+</body>
+</html>
