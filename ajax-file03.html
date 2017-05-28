@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="report-error"></div>
+	<div class="content">
+		<section id="eventos">
+
+		</section>
+	</div>
+
+	<script>
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function(){
+			console.log(xhr.status);
+
+			if(xhr.status === 200){
+				responseObject = JSON.parse(xhr.responseText);
+
+				var newContent = '';
+				var i;
+
+				newContent += '<div class="events">';
+					for(i = 0; i < responseObject.events.length; i++){
+						newContent += '<p><b>' + responseObject.events[i].location + '</b> - ';
+						newContent += responseObject.events[i].data + '</p>';
+					}
+				newContent += '</div>';
+
+				document.getElementById('eventos').innerHTML = newContent;
+
+			}else{
+				var error = document.getElementsByClassName('report-error')[0]
+				error.style = 'color: red'
+				error.innerHTML = 'A solicitação não foi concluída'
+			}
+		}
+		xhr.open('GET','buscar/data.json');
+		xhr.send(null)
+	</script>
+</body>
+</html>
