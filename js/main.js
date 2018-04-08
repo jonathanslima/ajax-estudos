@@ -9,7 +9,7 @@
     ajax.send(null);
 
     // ajax.onreadystatechange(function(){}) // Pode ser chamado dessa forma, ou usando o addEventListener
-    ajax.addEventListener('readystatechange', function(){;
+    ajax.addEventListener('readystatechange', function(){
       // Pode ser 2: Recebido os header, 3: Carregando o corpo da requisição, 4: Finalizar requisição
       console.log('Requisição code: ', ajax.readyState); 
       
