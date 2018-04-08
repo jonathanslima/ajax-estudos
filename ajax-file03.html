@@ -23,12 +23,12 @@
 				var newContent = '';
 				var i;
 
-				newContent += '<div class="events">';
+				newContent += '<div class="events"><ul>';
 					for(i = 0; i < responseObject.events.length; i++){
-						newContent += '<p><b>' + responseObject.events[i].location + '</b> - ';
-						newContent += responseObject.events[i].data + '</p>';
+						newContent += '<li><b>' + responseObject.events[i].location + '</b> - ';
+						newContent += responseObject.events[i].data + '</li>';
 					}
-				newContent += '</div>';
+				newContent += '</ul></div>';
 
 				document.getElementById('eventos').innerHTML = newContent;
 
