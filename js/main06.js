@@ -5,7 +5,7 @@
     // uncomment below to have data from xml file
 
     //ajax.open('GET', '/dashboard/projetos/ajax-estudos/xml/data.xml');
-    ajax.open('GET', '/dashboard/projetos/ajax-estudos/js/data.json');
+    ajax.open('GET', 'js/data.json');
     ajax.send();
     
     console.log('Carregando... ');

@@ -2,7 +2,7 @@
   'use strict';
 
     var ajax = new XMLHttpRequest();
-    ajax.open('GET', '/dashboard/projetos/ajax-estudos/js/data.json');
+    ajax.open('GET', 'js/data.json');
     ajax.send();
     
     console.log('Carregando... ');
