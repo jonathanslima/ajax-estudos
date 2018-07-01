@@ -1,0 +1,19 @@
+{
+	"livros":[
+		{"nome": "Pedro Páramo", "autor": "Juan Rulfo", "ano": "1955"},
+		{"nome": "Cem Anos de Solidão", "autor": "Gabriel Garcia Marquez", "ano": "1982"},
+    {"nome": "Ficções", "autor": "Jorge Luis Borges", "ano": "1944"},
+    {"nome": "O Iluminado", "autor": "Stephen King", "ano": "1977"},
+    {"nome": "O Visconde Partido ao Meio", "autor": "Ítalo Calvino", "ano": "1952"},
+    {"nome": "Estou Atrás de Vocês", "autor": "John Ajvide Lindqvist", "ano": "2016"},
+    {"nome": "Sobre a Escrita", "autor": "Stephen King", "ano": "2015"},
+    {"nome": "A Essência do Mal", "autor": "Luca D'Andrea", "ano": "2018"},
+    {"nome": "Deuses Americanos", "autor": "Neil Gaiman", "ano": "2001"},
+    {"nome": "Hex", "autor": "Thomas Olde Hevelt", "ano": "2013"},
+    {"nome": "Ghost Story", "autor": "Peter Straub", "ano": "1979"},
+    {"nome": "Mr. X", "autor": "Peter Straub", "ano": "1999"},
+    {"nome": "Frankenstein, ou o Prometeu Moderno", "autor": "Mary Shelley", "ano": "1816"},
+    {"nome": "O Exorcista", "autor": "William Peter Blatty", "ano": "1971"},
+    {"nome": "O Alquimista", "autor": "Paulo Coelho", "ano": "1988"}    
+	]
+}
