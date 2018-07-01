@@ -7,7 +7,13 @@ $(function() {
     inicializaCronometro();
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);
+    atualizaPlacar();
 });
+
+function atualizaTempoInicial(tempo) {
+    tempoInicial = tempo;
+    $("#tempo-digitacao").text(tempo);
+}
 
 function atualizaTamanhoFrase() {
     var frase = $(".frase").text();
@@ -48,7 +54,7 @@ function inicializaMarcadores() {
 function inicializaCronometro() {
     campo.one("focus", function() {
         var tempoRestante = $("#tempo-digitacao").text();
-        var cronometroID = setInterval(function() {
+    	var cronometroID = setInterval(function() {
     		tempoRestante--;
     		$("#tempo-digitacao").text(tempoRestante);
     		if (tempoRestante < 1) {
