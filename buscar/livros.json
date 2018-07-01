@@ -1,0 +1,8 @@
+{
+	"livros":[
+		{"nome": "Pedro Páramo", "autor": "Juan Rulfo", "ano": "1955"},
+		{"nome": "Cem Anos de Solidão", "autor": "Gabriel Garcia Marquez", "ano": "1982"},
+    {"nome": "Ficções", "autor": "Jorge Luis Borges", "ano": "1944"},
+    {"nome": "O Alquimista", "autor": "Paulo Coelho", "ano": "1988"}    
+	]
+}
